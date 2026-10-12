@@ -1,7 +1,6 @@
 package me.CAPS123987.smallspace;
 
 
-import com.github.drakescraft_labs.labupdate.DrakesLabsReleaseUpdate;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -58,8 +57,6 @@ public class SmallSpace extends JavaPlugin implements SlimefunAddon, Listener {
 	Config cfg = new Config(this);
     @Override
     public void onEnable() {
-        DrakesLabsReleaseUpdate.schedule(this, "SmallSpace-drake");
-
     	
     	this.getServer().getPluginManager().registerEvents((Listener)this, (Plugin)this);
     	
